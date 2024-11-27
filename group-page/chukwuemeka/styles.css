@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* define root colors for easy application */
+:root {
+    --background-color-1: #301661;
+    --background-color-2: #8860d0;
+    --background-color-3: #ffffff;
+    --color-4: #6D4A93;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #ffff;
+    color: #1277c5;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/*formats the header & navigation bar*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: #8860d0;
+    color: #ffffff;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    width: 120%;
+    padding-left: 30px;
+    
+}
+
+.logo h1 {
+    font-size: 32px;
+    font-family: "Bebas Neue", "Montserrat", "Poppins";
+    font-weight: 600px;
+    font-style: italic;
+}
+
+.mypix{
+    min-width: 20opx;
+}
+
+.nav-bar {
+    display: flex;
+    float: right;
+    padding-top: 50px;
+    width: 40%;
+    text-align: center;
+}
+
+.nav-bar a {
+    display: inline-block;
+    height: 100%;
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.nav-bar a:hover {
+    color: #301661;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: #8860d0;
+    color: #ffffff;
+    width: 100%;
+    z-index: 100;
+}
+
+/*formats the main section*/
+.main-section {
+    flex: 1;
+    width: 100%;
+    margin-top: 180px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+#about {
+    width: 68%;
+    height: auto;
+    padding: 100px;
+}
+
+#about h1 {
+    font-size: 46px;
+    font-weight: 600;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#about h2 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #6D4A93;
+    margin: 0;
+    padding: 0;
+}
+
+.profile {
+    width: 3%;
+    height: auto;
+}
+
+/*adjusts the services section towards the right*/
+.services {
+    padding-left: 28%; /* Adds indentation for bullets */
+    margin-top: 10px; /* Adds spacing above list */
+    padding-bottom: 50px;
+    
+}
+
+
+/*formats the social links*/
+/* uses transition to move element 
+    downward on hover */
+
+    .socials {
+        text-align: center;
+    }
+    
+    .social-link {
+        width: 10%;
+        height: 40px;
+        border-radius: 2px;
+        transition: transform 0.3s ease-out;
+        display: inline-block;
+    }
+    
+    .social-link:hover {
+        transform: translateY(8px);
+    }
+    
+    
+    .socials > div > a {
+        text-decoration: none;
+        color: var(--background-color-1);
+        font-size: 22px;
+        height: 40px;
+        padding: 2px 2px 2px 10px;
+    }
+    
+    .socials > div > span {
+        font-size: 22px;
+        padding-top: 3px;
+        height: 40px;
+        font-family: Poppins;
+        font-weight: 500;
+        display: block;
+    }
+
+
+/*footer of the main page*/
+footer {
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 80px;
+    border-top: 2px solid var(--background-color-1);
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+footer > .right {
+    width: 45%;
+    float: right;
+    margin-right: 20px;
+}
+
+footer > .left {
+    width: 45%;
+    float: left;
+    padding-left: 20px;
+}
+
+footer > div > p {
+    font-size: 16px;
+}
+
+
+ 

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color-1: #301661;
+  --background-color-2: #8860d0;
+  --background-color-3: #ffffff;
+  --color-4: #6D4A93;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ffff;
+  color: #301661;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: #8860d0;
+  color: #ffffff;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-bar {
+  display: flex;
+  float: right;
+  width: 40%;
+  text-align: center;
+  
+}
+.First-section{
+  line-height: 0.5em;
+
+}
+
+.image-overview{
+  border-radius: 100%;
+  size: 10px;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  
+}
+
+.profile-pic{
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-right: 900px;
+  width: 800px;
+  border-color: blue;
+}
+
+.logo-pic{
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-right: 900px;
+  width: 800px;
+  border-color: blue;
+}

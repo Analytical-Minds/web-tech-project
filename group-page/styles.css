@@ -1,0 +1,380 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*set html to 100vw*/
+html {
+    width: 100vw;
+}
+
+body {
+    color: black;
+    width: 100%;
+    z-index: 100;
+    font-family: poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*styles for the header and nav-bar*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px auto;
+    display: flex;
+    z-index: 100;
+}
+
+.nav-bar {
+    position: relative;
+    top: 40px;
+    left: 0;
+    width: 50%;
+    display: flex;
+    background-color: rgb(99, 99, 180);
+    float: left;
+    display: flex;
+    margin-top: 30px;
+    height: 40px;
+}
+
+.nav-bar > a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.nav-bar > a:hover {
+    color: rosybrown;
+}
+
+.nav-bar > a:first-of-type {
+    margin-left: 20px;
+}
+.logo {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 60px auto;
+    z-index: 100;
+}
+
+.group-logo {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+
+/*main section styls*/
+.main-content {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    z-index: 90;
+}
+
+.welcome {
+    width: 100%;
+    text-align: center;
+}
+
+.welcome > h1 {
+    color: royalblue;
+    font-size: 72px;
+}
+
+.motto {
+    font-style: italic;
+}
+
+
+/*photo slider*/
+/* Container for the slider */
+.slider-container {
+    width: 100%;
+    height: 700px;
+    overflow: hidden; /* Hides content outside the container */
+    position: relative;
+}
+
+/* Slider containing all images */
+.slider {
+    margin-top: 100px;
+    display: flex; /* Arrange images in a horizontal row */
+    transition: transform 0.5s ease-in-out; /* Smooth slide transition */
+    height: 500px;
+}
+
+/* Images */
+.slider img {
+    width: 100%; /* Full width of the container */
+    height: auto;
+    flex-shrink: 0; /* Prevent images from shrinking */
+    object-fit: cover; /* Adjust the image inside its container */
+}
+
+
+
+/*introduction section*/
+.introduction {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.overlay-text {
+    color: royalblue;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.introduction p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.introduction p:last-of-type {
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+/*team values section*/
+.team-values {
+    width: 100%;
+    display: flex;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.item {
+    margin-left: 20px;
+    width: 30%;
+    border: 2px solid #add;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    background-color: #f9f9f9;
+}
+
+.item:first-of-type {
+    padding-top: 80px;
+    margin-left: 5%;
+}
+
+.item:last-of-type {
+    margin-left: 30%;
+}
+
+.item p {
+    color: #333;
+}
+
+
+/*team section */
+.before-team {
+    width: 100%;
+}
+
+.before-team h1 { 
+    font-size: 36px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.team-section {
+    display: flex;
+    width: 100%;
+    background-color: #f4f4f4;
+    justify-content: space-between;
+}
+
+
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease, box shadow 0.3s ease;
+}
+
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+.team-member a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+  
+.team-member a:hover {
+    background-color: #0056b3;
+}
+
+
+/*formats the dynamic team section*/
+#team-section {
+    margin-top: 30px;
+}
+
+#team-section > .team-member > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+
+/*load more button*/
+.button-section {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+#load-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+  
+#load-more-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.go-up {
+    text-decoration: none;
+    color: #007bff;
+    float: right;
+    margin: 30px;
+    font-size: 18px;
+}
+
+/*formatting for form section*/
+/* Form Container */
+.form-container {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    z-index: 1000;
+  }
+  
+  /* Form Elements */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Overlay Background for Forms */
+  .overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+
+
+/*media query for the main page */
+@media only screen and (max-width: 768px) {
+    
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Analytical Minds</title>
+</head>
+<body>
+    <!-- defines the header of the page-->
+    <header class="header">
+        <navbar class="nav-bar">
+            <a href="#contact-us">Contact us</a>
+            <a href="#sign-up">Sign up</a>
+            <a href="https://github.com/Analytical-Minds">Projects</a>
+            <!--link to the bottom of the page-->
+            <a class="bottom" href="#down">Down</a>
+        </navbar>
+        <div class="logo">
+            <img class="group-logo" src="./images/group-logo.png" />
+        </div>
+    </header>
+
+    <!-- main section of the page-->
+    <main class="main-content">
+        <!-- welcome section and picture slide -->
+        <section class="welcome">
+            <h1>Analytical Minds</h1>
+            <h3 class="motto">Achieving excellence through teamwork!</h3>
+        </section>
+        <section class="slider-container">
+            <div class="slider">
+                <img src="images/main-pic-1.png" alt="Photo 1">
+                <img src="images/main-pic-2.png" alt="Photo 2">
+                <img src="images/main-pic-3.png" alt="Photo 3">
+                <img src="images/main-pic-4.png" alt="Photo 4">
+                <img src="images/main-pic-5.png" alt="Photo 5">
+            </div>
+        </section>
+
+        <!-- Introductory section -->
+        <section class="introduction">
+            <h3 class="overlay-text">We Analyze, Investigate, and Execute</h3>
+            <p>We are Analytical Minds, a quintet of aspiring global leaders in technology.</p>
+            <p>Our name reflects our curious and investigative culture, driven by a simple yet effective approach.</p>
+        </section>
+
+        <!-- mission, philosophy, and values section-->
+        <section class="team-values">
+            <div class="item">
+                <img src="images/vision-image.png" alt="Mission image">
+                <h2>Mission</h2>
+                <p>Fully dedicated to reshaping the technology industry, we strive to provide cutting-edge services and foster a culture of creativity and innovation.</p>
+            </div>
+            <div class="item">
+                <img src="images/philosophy-image.png" alt="Philosophy image">
+                <h2>Philosophy</h2>
+                <p>Thinking outside the box, we deliver innovative solutions through continuous development and staying updated with the latest technological trends.</p>
+            </div>
+        </section>
+        <section class="before-team">
+            <h1>Meet the Team</h1>
+        </section>
+
+        <!-- team members section-->
+        <section class="team-section">
+            <div class="team-member">
+                <img src="images/ellar.jpg" alt="Ellar">
+                <h3>Isaiah Emmanuella</h3>
+                <p>I am a caterer, singer, tech enthusiast, cybersecurity expert in the making, and writer.</p>
+                <a href="">About</a>
+            </div>
+            <div class="team-member">
+                <img src="images/emmanuel.jpg" alt="Emmanuel">
+                <h3>Unaegbu Emmanuel</h3>
+                <p>I am a curious individual interested in cybersecurity and web programming.</p>
+                <a href="chukwuemeka/index.html">About</a>
+            </div>
+            <div class="team-member">
+                <img src="images/Joseph.jpg" alt="Joseph">
+                <h3>Inaku Joseph David</h3>
+                <p>I am a DeFi and Web3 Product Manager with a strong background in leading innovative tech solutions and a cybersecurity enthusiast.</p>
+                <a href="joseph/index.html">About</a>
+            </div>
+            <div class="team-member">
+                <img src="images/Daniel.png" alt="Daniel">
+                <h3>Daniel Igwe</h3>
+                <p>I’m a seasoned Frontend Developer with a strong foundation in software engineering, honed through my experience with the African Leadership Group.</p>
+                <a href="daniel/index.html">About</a>
+            </div>
+            <div class="team-member">
+                <img src="images/Osaszu.jpg" alt="Osazu">
+                <h3>Osasumwen Osazuwa</h3>
+                <p>I am an aspiring technology specialist passionate about building a foundation in cloud technologies and cybersecurity to tackle modern digital challenges.</p>
+                <a href="osasumwen/index.html">About</a>
+            </div>
+        </section>
+        <section class="team-section" id="team-section"></section>
+        <section class="form-section">
+            <!-- Overlay -->
+            <div id="overlay" class="overlay"></div>
+
+            <!-- Contact Form -->
+            <div id="contact-form-container" class="form-container">
+                <form id="contact-form">
+                    <h2>Contact Us</h2>
+                    <label for="member">Select Member:</label>
+                    <select id="member" required>
+                    <option value="">--Choose--</option>
+                    <option value="Daniel">Daniel</option>
+                    <option value="Osasumwen">Osasumwen</option>
+                    <option value="Emmanuel">Emmanuel</option>
+                    <option value="Joseph">Joseph</option>
+                    <option value="Ellar">Ellar</option>
+                    <option value="Ali">Ali</option>
+                    <option value="Hadassah">Hadassah</option>
+                    <option value="Agozie">Agozie</option>
+                    <option value="Queen">Queen</option>
+                    </select>
+
+                    <label for="description">Describe Your Needs:</label>
+                    <textarea id="description" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Sign-Up Form -->
+            <div id="signup-form-container" class="form-container">
+                <form id="signup-form">
+                    <h2>Sign Up</h2>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required />
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required />
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </section>
+        <section class="button-section" id="down">
+            <button id="load-more-btn">Load More</button>
+            <a class="go-up" href="#">top</a>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
