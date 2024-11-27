@@ -412,6 +412,100 @@ body {
 
 
 /*media query for the main page */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    /* Adjust header and navigation */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .nav-bar {
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgb(60, 60, 120); /* Slightly darker for better contrast on small screens */
+    }
+
+    .nav-bar > a {
+        margin: 10px 0 10px 10px;
+        font-size: 16px;
+    }
+    .group-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    /*adjust the top of main content */
+    .main-content {
+        top: 250px;
+    }
+
+    /* Main content adjustments */
+    .welcome > h1 {
+        font-size: 48px;
+    }
+    .motto {
+        font-size: 16px;
+    }
+
+    /* Adjust slider */
+    .slider-container {
+        height: 400px;
+    }
+    .slider img {
+        height: 100%; /* Ensure proper scaling for smaller screens */
+    }
+
+    /* Team values section */
+    .team-values {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item {
+        width: 100%;
+        margin: 10px 0;
+        
+    }
+
+    .item:first-of-type {
+        padding-top: 80px;
+        margin-left: 0;
+    }
     
+    .item:last-of-type {
+        margin-left: 0;
+    }
+
+    /* Team members */
+    .team-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .team-member {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Form adjustments */
+    .form-container {
+        width: 95%;
+        max-width: none;
+    }
+
+    /* Button section */
+    #load-more-btn {
+        width: 40%;
+        margin: 20px auto;
+    }
+    .go-up {
+        font-size: 16px;
+        margin: 20px;
+    }
+
+    /* Modal adjustments */
+    .modal-content {
+        width: 95%;
+        max-width: 350px;
+    }
 }
