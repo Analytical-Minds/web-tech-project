@@ -128,8 +128,14 @@ body {
 }
 
 .profile {
-    width: 3%;
+    width: 30%;
+    height: 300px;
+}
+
+.profile-pic {
+    width: 100%;
     height: auto;
+    border-radius: 50%;
 }
 
 /*adjusts the services section towards the right*/
