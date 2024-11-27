@@ -373,6 +373,43 @@ body {
 }
 
 
+/*modal section*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 95
+}
+  
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 500px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+  
+.close-btn {
+    position: relative;
+    top: 2px;
+    left: 90;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    margin-left: 95%;
+}
+  
+
 
 /*media query for the main page */
 @media only screen and (max-width: 768px) {

@@ -103,6 +103,7 @@
 
             <!-- Contact Form -->
             <div id="contact-form-container" class="form-container">
+                <button class="close-btn">&times;</button> <!-- Close Button -->
                 <form id="contact-form">
                     <h2>Contact Us</h2>
                     <label for="member">Select Member:</label>
@@ -128,6 +129,7 @@
 
             <!-- Sign-Up Form -->
             <div id="signup-form-container" class="form-container">
+                <button class="close-btn">&times;</button> <!-- Close Button -->
                 <form id="signup-form">
                     <h2>Sign Up</h2>
                     <label for="name">Full Name:</label>
@@ -146,6 +148,15 @@
         <section class="button-section" id="down">
             <button id="load-more-btn">Load More</button>
             <a class="go-up" href="#">top</a>
+        </section>
+
+        <!--display a modal when a team member is selected -->
+        <section id="team-modal" class="modal">
+            <div class="modal-content">
+                <button class="close-btn">&times;</button> <!-- Close Button -->
+                <h3 id="modal-name"></h3>
+                <p id="modal-description"></p>
+            </div>
         </section>
     </main>
     <script src="./script.js"></script>

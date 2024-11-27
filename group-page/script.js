@@ -76,6 +76,7 @@ function hideForms(formId) {
     document.getElementById("contact-form-container").style.display = "none";
     document.getElementById("signup-form-container").style.display = "none";
     document.getElementById("overlay").style.display = "none";
+    document.getElementById("team-modal").style.display = "none";
 }
 
 
@@ -128,4 +129,23 @@ document.getElementById("signup-form").addEventListener("submit", function (e) {
         alert(`Sign-up successful! Welcome, ${name}.`);
         hideForms(); // Hide form after submission
     }
+});
+
+
+// script for interactive modal section
+document.querySelectorAll(".team-member").forEach((member) => {
+    member.addEventListener("click", function () {
+      const name = this.querySelector("h3").textContent;
+      const description = this.querySelector("p").textContent;
+  
+      document.getElementById("modal-name").textContent = name;
+      document.getElementById("modal-description").textContent = description;
+  
+      document.getElementById("team-modal").style.display = "flex";
+    });
+});
+
+// Event listener for closing forms and modals via close button
+document.querySelectorAll(".close-btn").forEach((btn) => {
+    btn.addEventListener("click", hideForms);
 });
